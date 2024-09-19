@@ -1,0 +1,161 @@
+$date
+	Thu Sep 19 21:14:07 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module test_NAND $end
+$var wire 1 ! F $end
+$var reg 1 " w $end
+$var reg 1 # x $end
+$var reg 1 $ y $end
+$var reg 1 % z $end
+$scope module uut $end
+$var wire 1 ! F $end
+$var wire 1 " w $end
+$var wire 1 & w1 $end
+$var wire 1 ' w2 $end
+$var wire 1 ( w3 $end
+$var wire 1 ) w4 $end
+$var wire 1 * w5 $end
+$var wire 1 + w_not $end
+$var wire 1 # x $end
+$var wire 1 , x_not $end
+$var wire 1 $ y $end
+$var wire 1 - y_not $end
+$var wire 1 % z $end
+$var wire 1 . z_not $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1.
+1-
+1,
+1+
+0*
+1)
+0(
+0'
+1&
+0%
+0$
+0#
+0"
+1!
+$end
+#10
+0!
+1*
+0)
+1'
+1(
+0.
+1%
+#20
+1!
+0*
+1)
+0'
+1.
+0-
+0%
+1$
+#30
+0!
+1*
+0)
+1'
+0.
+1%
+#40
+0*
+1)
+1!
+0'
+0(
+1.
+1-
+0,
+0%
+0$
+1#
+#50
+0!
+1*
+0)
+1'
+1(
+0.
+1%
+#60
+1!
+0*
+1)
+0'
+1.
+0-
+0%
+1$
+#70
+0!
+1*
+0)
+1'
+0.
+1%
+#80
+0*
+1!
+1)
+0(
+0&
+1.
+1-
+1,
+0+
+0%
+0$
+0#
+1"
+#90
+1(
+0.
+1%
+#100
+1.
+0-
+0%
+1$
+#110
+0.
+1%
+#120
+1*
+0)
+0(
+1&
+1.
+1-
+0,
+0%
+0$
+1#
+#130
+0!
+1(
+0.
+1%
+#140
+1.
+0-
+0%
+1$
+#150
+0.
+1%
+#200

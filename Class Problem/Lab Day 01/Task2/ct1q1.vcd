@@ -1,0 +1,60 @@
+$date
+	Wed Sep 18 15:23:21 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_Simple_Circuit $end
+$var wire 1 ! op $end
+$var reg 1 " x $end
+$var reg 1 # y $end
+$var reg 1 $ z $end
+$scope module M1 $end
+$var wire 1 ! op $end
+$var wire 1 % w1 $end
+$var wire 1 & w2 $end
+$var wire 1 " x $end
+$var wire 1 # y $end
+$var wire 1 $ z $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0&
+1%
+0$
+0#
+0"
+0!
+$end
+#10
+1!
+1&
+1$
+#20
+0&
+0$
+1#
+#30
+1&
+1$
+#40
+0!
+0&
+0%
+0$
+0#
+1"
+#50
+1$
+#60
+1!
+0$
+1#
+#70
+1$
+#200
