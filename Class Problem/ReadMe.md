@@ -1,0 +1,1 @@
+This contains HDL code (Verilog) that I developed during my exams and lab tests. The projects focus on various digital logic design concepts, covering combinational and sequential circuits, written in Verilog.

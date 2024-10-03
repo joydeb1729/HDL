@@ -1,0 +1,303 @@
+$date
+	Sun Sep 29 17:22:00 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_three_bit_adder_substractor $end
+$var wire 3 ! S [2:0] $end
+$var wire 1 " Cout $end
+$var reg 3 # A [2:0] $end
+$var reg 3 $ B [2:0] $end
+$var reg 1 % control $end
+$scope module addSub $end
+$var wire 3 & a [2:0] $end
+$var wire 3 ' b [2:0] $end
+$var wire 1 % control $end
+$var wire 3 ( c [2:0] $end
+$var wire 3 ) b_final [2:0] $end
+$var wire 3 * S [2:0] $end
+$var wire 1 " Cout $end
+$scope module fa1 $end
+$var wire 1 + A $end
+$var wire 1 , B $end
+$var wire 1 % Cin $end
+$var wire 1 - Cout $end
+$var wire 1 . c2 $end
+$var wire 1 / c1 $end
+$var wire 1 0 S $end
+$var wire 1 1 A_xor_B $end
+$scope module ha1 $end
+$var wire 1 + A $end
+$var wire 1 , B $end
+$var wire 1 / Cout $end
+$var wire 1 1 S $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 1 A $end
+$var wire 1 % B $end
+$var wire 1 . Cout $end
+$var wire 1 0 S $end
+$upscope $end
+$upscope $end
+$scope module fa2 $end
+$var wire 1 2 A $end
+$var wire 1 3 B $end
+$var wire 1 4 Cin $end
+$var wire 1 5 Cout $end
+$var wire 1 6 c2 $end
+$var wire 1 7 c1 $end
+$var wire 1 8 S $end
+$var wire 1 9 A_xor_B $end
+$scope module ha1 $end
+$var wire 1 2 A $end
+$var wire 1 3 B $end
+$var wire 1 7 Cout $end
+$var wire 1 9 S $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 9 A $end
+$var wire 1 4 B $end
+$var wire 1 6 Cout $end
+$var wire 1 8 S $end
+$upscope $end
+$upscope $end
+$scope module fa3 $end
+$var wire 1 : A $end
+$var wire 1 ; B $end
+$var wire 1 < Cin $end
+$var wire 1 " Cout $end
+$var wire 1 = c2 $end
+$var wire 1 > c1 $end
+$var wire 1 ? S $end
+$var wire 1 @ A_xor_B $end
+$scope module ha1 $end
+$var wire 1 : A $end
+$var wire 1 ; B $end
+$var wire 1 > Cout $end
+$var wire 1 @ S $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 @ A $end
+$var wire 1 < B $end
+$var wire 1 = Cout $end
+$var wire 1 ? S $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1@
+0?
+0>
+1=
+1<
+0;
+1:
+19
+08
+07
+16
+15
+14
+13
+02
+01
+00
+1/
+0.
+1-
+1,
+1+
+b0 *
+b11 )
+bz11 (
+b11 '
+b101 &
+0%
+b11 $
+b101 #
+1"
+b0 !
+$end
+#15
+0<
+14
+05
+1.
+bz01 (
+1-
+18
+06
+0?
+0=
+11
+0/
+09
+0@
+1>
+0,
+03
+1;
+b100 )
+b10 !
+b10 *
+00
+1%
+#30
+1<
+17
+bz11 (
+15
+13
+0;
+18
+06
+b110 !
+b110 *
+1?
+0"
+b10 )
+09
+0@
+0>
+12
+0:
+b101 $
+b101 '
+b11 #
+b11 &
+#45
+0<
+05
+0"
+19
+07
+04
+1?
+0=
+03
+bz00 (
+0-
+1@
+b0 )
+b111 !
+b111 *
+10
+0.
+1:
+0%
+b0 $
+b0 '
+b111 #
+b111 &
+#60
+1<
+15
+1?
+1"
+01
+1/
+09
+17
+0@
+1>
+14
+1,
+13
+1;
+bz11 (
+1-
+b111 )
+b111 !
+b111 *
+10
+0.
+1%
+#75
+04
+0<
+0,
+03
+0;
+10
+0.
+0-
+08
+06
+bz00 (
+05
+b1 !
+b1 *
+0?
+0=
+0"
+b0 )
+01
+0/
+09
+07
+0@
+0>
+0+
+02
+0:
+b111 $
+b111 '
+b0 #
+b0 &
+#90
+18
+14
+bz01 (
+1-
+1"
+1/
+1>
+0?
+1,
+1;
+01
+0@
+b101 )
+b10 !
+b10 *
+00
+1+
+1:
+0%
+b101 $
+b101 '
+b101 #
+b101 &
+#105
+1=
+1<
+14
+15
+1.
+bz11 (
+1-
+08
+16
+0?
+1"
+11
+0/
+19
+1@
+0>
+0,
+13
+0;
+b10 )
+b0 !
+b0 *
+00
+1%
+#120

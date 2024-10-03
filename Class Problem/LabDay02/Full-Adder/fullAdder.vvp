@@ -1,0 +1,132 @@
+#! /d/a/fpga-toolchain-build/fpga-toolchain-build/iverilog/_install/bin/vvp
+:ivl_version "11.0 (stable)" "(d3b0992)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\PROGRA~3\CHOCOL~1\lib\iverilog\tools\lib\ivl\system.vpi";
+:vpi_module "C:\PROGRA~3\CHOCOL~1\lib\iverilog\tools\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\PROGRA~3\CHOCOL~1\lib\iverilog\tools\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\PROGRA~3\CHOCOL~1\lib\iverilog\tools\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\PROGRA~3\CHOCOL~1\lib\iverilog\tools\lib\ivl\va_math.vpi";
+S_000002247c9ae500 .scope module, "full_adder_gate" "full_adder_gate" 2 1;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "a";
+    .port_info 3 /INPUT 1 "b";
+    .port_info 4 /INPUT 1 "cin";
+o000002247c83cfd8 .functor BUFZ 1, C4<z>; HiZ drive
+o000002247c83d008 .functor BUFZ 1, C4<z>; HiZ drive
+L_000002247c824860 .functor XOR 1, o000002247c83cfd8, o000002247c83d008, C4<0>, C4<0>;
+o000002247c83d038 .functor BUFZ 1, C4<z>; HiZ drive
+L_000002247c8248d0 .functor AND 1, L_000002247c824860, o000002247c83d038, C4<1>, C4<1>;
+L_000002247c824da0 .functor AND 1, o000002247c83cfd8, o000002247c83d008, C4<1>, C4<1>;
+L_000002247c824e10 .functor XOR 1, L_000002247c824860, o000002247c83d038, C4<0>, C4<0>;
+L_000002247c824cc0 .functor OR 1, L_000002247c8248d0, L_000002247c824da0, C4<0>, C4<0>;
+v000002247c803140_0 .net "a", 0 0, o000002247c83cfd8;  0 drivers
+v000002247c836eb0_0 .net "b", 0 0, o000002247c83d008;  0 drivers
+v000002247c802a80_0 .net "cin", 0 0, o000002247c83d038;  0 drivers
+v000002247c802b20_0 .net "cout", 0 0, L_000002247c824cc0;  1 drivers
+v000002247c833180_0 .net "sum", 0 0, L_000002247c824e10;  1 drivers
+v000002247c832780_0 .net "w1", 0 0, L_000002247c824860;  1 drivers
+v000002247c832fa0_0 .net "w2", 0 0, L_000002247c8248d0;  1 drivers
+v000002247c833360_0 .net "w3", 0 0, L_000002247c824da0;  1 drivers
+S_000002247c9ae690 .scope module, "t_full_adder" "t_full_adder" 2 20;
+ .timescale 0 0;
+v000002247c832d20_0 .var "a", 0 0;
+v000002247c8325a0_0 .var "b", 0 0;
+v000002247c832b40_0 .var "cin", 0 0;
+v000002247c8334a0_0 .net "cout", 0 0, L_000002247c833690;  1 drivers
+v000002247c833040_0 .net "sum", 0 0, L_000002247c824e80;  1 drivers
+S_000002247c802bc0 .scope module, "fao" "full_adder_opertor" 2 26, 2 13 0, S_000002247c9ae690;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "cout";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "a";
+    .port_info 3 /INPUT 1 "b";
+    .port_info 4 /INPUT 1 "cin";
+L_000002247c824b00 .functor XOR 1, v000002247c832d20_0, v000002247c8325a0_0, C4<0>, C4<0>;
+L_000002247c824e80 .functor XOR 1, L_000002247c824b00, v000002247c832b40_0, C4<0>, C4<0>;
+L_000002247c824f60 .functor XOR 1, v000002247c832d20_0, v000002247c8325a0_0, C4<0>, C4<0>;
+L_000002247c8249b0 .functor AND 1, L_000002247c824f60, v000002247c832b40_0, C4<1>, C4<1>;
+L_000002247c824be0 .functor AND 1, v000002247c832d20_0, v000002247c8325a0_0, C4<1>, C4<1>;
+L_000002247c833690 .functor OR 1, L_000002247c8249b0, L_000002247c824be0, C4<0>, C4<0>;
+v000002247c832c80_0 .net *"_ivl_0", 0 0, L_000002247c824b00;  1 drivers
+v000002247c833220_0 .net *"_ivl_4", 0 0, L_000002247c824f60;  1 drivers
+v000002247c832e60_0 .net *"_ivl_6", 0 0, L_000002247c8249b0;  1 drivers
+v000002247c832f00_0 .net *"_ivl_8", 0 0, L_000002247c824be0;  1 drivers
+v000002247c832be0_0 .net "a", 0 0, v000002247c832d20_0;  1 drivers
+v000002247c832dc0_0 .net "b", 0 0, v000002247c8325a0_0;  1 drivers
+v000002247c832960_0 .net "cin", 0 0, v000002247c832b40_0;  1 drivers
+v000002247c8332c0_0 .net "cout", 0 0, L_000002247c833690;  alias, 1 drivers
+v000002247c8326e0_0 .net "sum", 0 0, L_000002247c824e80;  alias, 1 drivers
+    .scope S_000002247c9ae690;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002247c832d20_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002247c8325a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002247c832b40_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002247c832d20_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002247c8325a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002247c832b40_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002247c832d20_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002247c8325a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002247c832b40_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002247c832d20_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002247c8325a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002247c832b40_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002247c832d20_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002247c8325a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002247c832b40_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002247c832d20_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002247c8325a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002247c832b40_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002247c832d20_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002247c8325a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002247c832b40_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002247c832d20_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002247c8325a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002247c832b40_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 39 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_000002247c9ae690;
+T_1 ;
+    %vpi_call 2 44 "$monitor", "Time = %0t | a = %b, b = %b, cin = %b | Carry = %b, Sum = %b |", $time, v000002247c832d20_0, v000002247c8325a0_0, v000002247c832b40_0, v000002247c8334a0_0, v000002247c833040_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "fullAdder.v";

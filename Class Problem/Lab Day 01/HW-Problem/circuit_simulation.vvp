@@ -1,0 +1,236 @@
+#! /d/a/fpga-toolchain-build/fpga-toolchain-build/iverilog/_install/bin/vvp
+:ivl_version "11.0 (stable)" "(d3b0992)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\PROGRA~3\CHOCOL~1\lib\iverilog\tools\lib\ivl\system.vpi";
+:vpi_module "C:\PROGRA~3\CHOCOL~1\lib\iverilog\tools\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\PROGRA~3\CHOCOL~1\lib\iverilog\tools\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\PROGRA~3\CHOCOL~1\lib\iverilog\tools\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\PROGRA~3\CHOCOL~1\lib\iverilog\tools\lib\ivl\va_math.vpi";
+S_000001ff01449d80 .scope module, "Circuit_Testbench" "Circuit_Testbench" 2 35;
+ .timescale 0 0;
+v000001ff014b9a20_0 .net "F_nand", 0 0, L_000001ff0140a990;  1 drivers
+v000001ff014b8bc0_0 .net "F_nor", 0 0, L_000001ff0140aae0;  1 drivers
+v000001ff014b92a0_0 .var "w", 0 0;
+v000001ff014b97a0_0 .var "x", 0 0;
+v000001ff014b8260_0 .var "y", 0 0;
+v000001ff014b9ac0_0 .var "z", 0 0;
+S_000001ff0140e2d0 .scope module, "nand_circuit" "NAND_Gate" 2 40, 2 1 0, S_000001ff01449d80;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "F";
+    .port_info 1 /INPUT 1 "w";
+    .port_info 2 /INPUT 1 "x";
+    .port_info 3 /INPUT 1 "y";
+    .port_info 4 /INPUT 1 "z";
+L_000001ff0140a760 .functor NAND 1, v000001ff014b92a0_0, v000001ff014b92a0_0, C4<1>, C4<1>;
+L_000001ff0140a450 .functor NAND 1, v000001ff014b97a0_0, v000001ff014b97a0_0, C4<1>, C4<1>;
+L_000001ff0140abc0 .functor NAND 1, v000001ff014b8260_0, v000001ff014b8260_0, C4<1>, C4<1>;
+L_000001ff0140aa00 .functor NAND 1, v000001ff014b9ac0_0, v000001ff014b9ac0_0, C4<1>, C4<1>;
+L_000001ff0140b2c0 .functor NAND 1, v000001ff014b92a0_0, L_000001ff0140a450, C4<1>, C4<1>;
+L_000001ff0140a840 .functor NAND 1, L_000001ff0140a760, L_000001ff0140aa00, C4<1>, C4<1>;
+L_000001ff0140a4c0 .functor NAND 1, L_000001ff0140abc0, L_000001ff0140aa00, C4<1>, C4<1>;
+L_000001ff0140b020 .functor NAND 1, L_000001ff0140b2c0, L_000001ff0140a840, C4<1>, C4<1>;
+L_000001ff0140a7d0 .functor NAND 1, L_000001ff0140b020, L_000001ff0140b020, C4<1>, C4<1>;
+L_000001ff0140a990 .functor NAND 1, L_000001ff0140a4c0, L_000001ff0140a7d0, C4<1>, C4<1>;
+v000001ff01447360_0 .net "F", 0 0, L_000001ff0140a990;  alias, 1 drivers
+v000001ff01447400_0 .net "nw", 0 0, L_000001ff0140a760;  1 drivers
+v000001ff014474a0_0 .net "nx", 0 0, L_000001ff0140a450;  1 drivers
+v000001ff01447540_0 .net "ny", 0 0, L_000001ff0140abc0;  1 drivers
+v000001ff014472c0_0 .net "nz", 0 0, L_000001ff0140aa00;  1 drivers
+v000001ff014475e0_0 .net "temp1", 0 0, L_000001ff0140b2c0;  1 drivers
+v000001ff01447900_0 .net "temp2", 0 0, L_000001ff0140a840;  1 drivers
+v000001ff01447ae0_0 .net "temp3", 0 0, L_000001ff0140a4c0;  1 drivers
+v000001ff014479a0_0 .net "temp4", 0 0, L_000001ff0140b020;  1 drivers
+v000001ff01447a40_0 .net "temp5", 0 0, L_000001ff0140a7d0;  1 drivers
+v000001ff01447b80_0 .net "w", 0 0, v000001ff014b92a0_0;  1 drivers
+v000001ff01447720_0 .net "x", 0 0, v000001ff014b97a0_0;  1 drivers
+v000001ff01447680_0 .net "y", 0 0, v000001ff014b8260_0;  1 drivers
+v000001ff01447c20_0 .net "z", 0 0, v000001ff014b9ac0_0;  1 drivers
+S_000001ff0140e460 .scope module, "nor_circuit" "NOR_Gate" 2 41, 2 20 0, S_000001ff01449d80;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "F";
+    .port_info 1 /INPUT 1 "w";
+    .port_info 2 /INPUT 1 "x";
+    .port_info 3 /INPUT 1 "y";
+    .port_info 4 /INPUT 1 "z";
+L_000001ff0140a530 .functor NOR 1, v000001ff014b92a0_0, v000001ff014b92a0_0, C4<0>, C4<0>;
+L_000001ff0140a680 .functor NOR 1, L_000001ff0140a530, v000001ff014b97a0_0, C4<0>, C4<0>;
+L_000001ff0140b170 .functor NOR 1, v000001ff014b92a0_0, v000001ff014b9ac0_0, C4<0>, C4<0>;
+L_000001ff0140aa70 .functor NOR 1, v000001ff014b8260_0, v000001ff014b9ac0_0, C4<0>, C4<0>;
+L_000001ff0140a920 .functor NOR 1, L_000001ff0140a680, L_000001ff0140b170, C4<0>, C4<0>;
+L_000001ff0140a6f0 .functor NOR 1, L_000001ff0140a920, L_000001ff0140a920, C4<0>, C4<0>;
+L_000001ff0140aca0 .functor NOR 1, L_000001ff0140a6f0, L_000001ff0140aa70, C4<0>, C4<0>;
+L_000001ff0140aae0 .functor NOR 1, L_000001ff0140aca0, L_000001ff0140aca0, C4<0>, C4<0>;
+v000001ff014470e0_0 .net "F", 0 0, L_000001ff0140aae0;  alias, 1 drivers
+v000001ff01447cc0_0 .net "nw", 0 0, L_000001ff0140a530;  1 drivers
+v000001ff01446e60_0 .net "temp1", 0 0, L_000001ff0140a680;  1 drivers
+v000001ff01446fa0_0 .net "temp2", 0 0, L_000001ff0140b170;  1 drivers
+v000001ff01447d60_0 .net "temp3", 0 0, L_000001ff0140aa70;  1 drivers
+v000001ff014477c0_0 .net "temp4", 0 0, L_000001ff0140a920;  1 drivers
+v000001ff01446f00_0 .net "temp5", 0 0, L_000001ff0140a6f0;  1 drivers
+v000001ff01447040_0 .net "temp6", 0 0, L_000001ff0140aca0;  1 drivers
+v000001ff01447180_0 .net "w", 0 0, v000001ff014b92a0_0;  alias, 1 drivers
+v000001ff01447220_0 .net "x", 0 0, v000001ff014b97a0_0;  alias, 1 drivers
+v000001ff014b9700_0 .net "y", 0 0, v000001ff014b8260_0;  alias, 1 drivers
+v000001ff014b9340_0 .net "z", 0 0, v000001ff014b9ac0_0;  alias, 1 drivers
+    .scope S_000001ff01449d80;
+T_0 ;
+    %vpi_call 2 44 "$dumpfile", "circuit_simulation.vcd" {0 0 0};
+    %vpi_call 2 45 "$dumpvars", 32'sb00000000000000000000000000000000, S_000001ff01449d80 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b92a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b97a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b8260_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b9ac0_0, 0, 1;
+    %delay 15, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b92a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b97a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b8260_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b9ac0_0, 0, 1;
+    %delay 15, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b92a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b97a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b8260_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b9ac0_0, 0, 1;
+    %delay 15, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b92a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b97a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b8260_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b9ac0_0, 0, 1;
+    %delay 15, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b92a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b97a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b8260_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b9ac0_0, 0, 1;
+    %delay 15, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b92a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b97a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b8260_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b9ac0_0, 0, 1;
+    %delay 15, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b92a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b97a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b8260_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b9ac0_0, 0, 1;
+    %delay 15, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b92a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b97a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b8260_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b9ac0_0, 0, 1;
+    %delay 15, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b92a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b97a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b8260_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b9ac0_0, 0, 1;
+    %delay 15, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b92a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b97a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b8260_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b9ac0_0, 0, 1;
+    %delay 15, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b92a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b97a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b8260_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b9ac0_0, 0, 1;
+    %delay 15, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b92a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b97a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b8260_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b9ac0_0, 0, 1;
+    %delay 15, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b92a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b97a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b8260_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b9ac0_0, 0, 1;
+    %delay 15, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b92a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b97a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b8260_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b9ac0_0, 0, 1;
+    %delay 15, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b92a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b97a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b8260_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001ff014b9ac0_0, 0, 1;
+    %delay 15, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b92a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b97a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b8260_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001ff014b9ac0_0, 0, 1;
+    %delay 15, 0;
+    %end;
+    .thread T_0;
+    .scope S_000001ff01449d80;
+T_1 ;
+    %delay 300, 0;
+    %vpi_call 2 65 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "circuit_simulation.v";
