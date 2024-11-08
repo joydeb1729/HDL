@@ -1,0 +1,38 @@
+$date
+	Fri Jul 05 17:58:46 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_mag_compare $end
+$var wire 1 ! A_lt_B $end
+$var wire 1 " A_gt_B $end
+$var wire 1 # A_eq_B $end
+$var reg 4 $ A [3:0] $end
+$var reg 4 % B [3:0] $end
+$scope module MC $end
+$var wire 4 & A [3:0] $end
+$var wire 4 ' B [3:0] $end
+$var wire 1 ! A_lt_B $end
+$var wire 1 " A_gt_B $end
+$var wire 1 # A_eq_B $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b111 '
+b1 &
+b111 %
+b1 $
+0#
+0"
+1!
+$end
+#100

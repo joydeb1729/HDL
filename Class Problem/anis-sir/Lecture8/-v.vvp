@@ -1,0 +1,97 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "D:\iverilog\lib\ivl\system.vpi";
+:vpi_module "D:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "D:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "D:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "D:\iverilog\lib\ivl\va_math.vpi";
+S_0000019b80aa8970 .scope module, "t_decoder_2x4_gates" "t_decoder_2x4_gates" 2 2;
+ .timescale 0 0;
+v0000019b80c0cf00_0 .var "A", 0 0;
+v0000019b80c0c000_0 .var "B", 0 0;
+v0000019b80c0c780_0 .net "D", 0 3, L_0000019b80c0cc80;  1 drivers
+v0000019b80c0ce60_0 .var "enable", 0 0;
+S_0000019b80aad010 .scope module, "D1" "decoder_2x4_gates" 2 5, 3 1 0, S_0000019b80aa8970;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 4 "D";
+    .port_info 1 /INPUT 1 "A";
+    .port_info 2 /INPUT 1 "B";
+    .port_info 3 /INPUT 1 "enable";
+L_0000019b80aad420 .functor NOT 1, v0000019b80c0cf00_0, C4<0>, C4<0>, C4<0>;
+L_0000019b80b92f00 .functor NOT 1, v0000019b80c0c000_0, C4<0>, C4<0>, C4<0>;
+L_0000019b80aaadb0 .functor NOT 1, v0000019b80c0ce60_0, C4<0>, C4<0>, C4<0>;
+L_0000019b80aaae20 .functor AND 1, L_0000019b80aad420, L_0000019b80b92f00, v0000019b80c0ce60_0, C4<1>;
+L_0000019b80aaae90 .functor AND 1, L_0000019b80aad420, v0000019b80c0c000_0, v0000019b80c0ce60_0, C4<1>;
+L_0000019b80aaaf00 .functor AND 1, v0000019b80c0cf00_0, L_0000019b80b92f00, v0000019b80c0ce60_0, C4<1>;
+L_0000019b80aaaf70 .functor AND 1, v0000019b80c0cf00_0, v0000019b80c0c000_0, v0000019b80c0ce60_0, C4<1>;
+v0000019b80aa8250_0 .net "A", 0 0, v0000019b80c0cf00_0;  1 drivers
+v0000019b80aa84b0_0 .net "A_not", 0 0, L_0000019b80aad420;  1 drivers
+v0000019b80aa8710_0 .net "B", 0 0, v0000019b80c0c000_0;  1 drivers
+v0000019b80b92910_0 .net "B_not", 0 0, L_0000019b80b92f00;  1 drivers
+v0000019b80aad1a0_0 .net "D", 0 3, L_0000019b80c0cc80;  alias, 1 drivers
+v0000019b80aad240_0 .net *"_ivl_0", 0 0, L_0000019b80aaae20;  1 drivers
+v0000019b80aad2e0_0 .net *"_ivl_2", 0 0, L_0000019b80aaae90;  1 drivers
+v0000019b80aad380_0 .net *"_ivl_4", 0 0, L_0000019b80aaaf00;  1 drivers
+v0000019b80aaac70_0 .net *"_ivl_6", 0 0, L_0000019b80aaaf70;  1 drivers
+v0000019b80aaad10_0 .net "enable", 0 0, v0000019b80c0ce60_0;  1 drivers
+v0000019b80c0c640_0 .net "enable_not", 0 0, L_0000019b80aaadb0;  1 drivers
+L_0000019b80c0cc80 .concat8 [ 1 1 1 1], L_0000019b80aaaf70, L_0000019b80aaaf00, L_0000019b80aaae90, L_0000019b80aaae20;
+    .scope S_0000019b80aa8970;
+T_0 ;
+    %vpi_call 2 8 "$dumpfile", "decoder_2x4_gates.vcd" {0 0 0};
+    %vpi_call 2 9 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000019b80aa8970 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000019b80c0cf00_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000019b80c0c000_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000019b80c0ce60_0, 0, 1;
+    %delay 50, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000019b80c0cf00_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000019b80c0c000_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000019b80c0ce60_0, 0, 1;
+    %delay 50, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000019b80c0cf00_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000019b80c0c000_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000019b80c0ce60_0, 0, 1;
+    %delay 50, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000019b80c0cf00_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000019b80c0c000_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000019b80c0ce60_0, 0, 1;
+    %delay 50, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000019b80c0cf00_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000019b80c0c000_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000019b80c0ce60_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_0000019b80aa8970;
+T_1 ;
+    %delay 250, 0;
+    %vpi_call 2 16 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_0000019b80aa8970;
+T_2 ;
+    %vpi_call 2 18 "$monitor", "A=%b B=%b E=%b D=%4b", v0000019b80c0cf00_0, v0000019b80c0c000_0, v0000019b80c0ce60_0, v0000019b80c0c780_0 {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "t_decoder_2x4_gates_1.v";
+    "./decoder_2x4_gates_1.v";

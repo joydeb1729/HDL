@@ -1,0 +1,39 @@
+$date
+	Fri Jul 05 20:36:29 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_binary_adder $end
+$var wire 4 ! S [3:0] $end
+$var wire 1 " C_out $end
+$var reg 4 # A [3:0] $end
+$var reg 4 $ B [3:0] $end
+$var reg 1 % C_in $end
+$scope module BA $end
+$var wire 4 & A [3:0] $end
+$var wire 4 ' B [3:0] $end
+$var wire 1 % C_in $end
+$var wire 4 ( Sum [3:0] $end
+$var wire 1 " C_out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1 (
+b111 '
+b1001 &
+1%
+b111 $
+b1001 #
+1"
+b1 !
+$end
+#250

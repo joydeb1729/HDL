@@ -1,0 +1,192 @@
+$date
+	Sun Jul 07 23:29:39 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_Mealy_Zero_Detector $end
+$var wire 1 ! t_y_out $end
+$var reg 1 " t_clock $end
+$var reg 1 # t_reset $end
+$var reg 1 $ t_x_in $end
+$scope module M0 $end
+$var wire 1 " clock $end
+$var wire 1 # reset $end
+$var wire 1 $ x_in $end
+$var parameter 2 % S0 $end
+$var parameter 2 & S1 $end
+$var parameter 2 ' S2 $end
+$var parameter 2 ( S3 $end
+$var reg 2 ) next_state [1:0] $end
+$var reg 2 * state [1:0] $end
+$var reg 1 ! y_out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11 (
+b10 '
+b1 &
+b0 %
+$end
+#0
+$dumpvars
+b0 *
+b0 )
+x$
+0#
+0"
+0!
+$end
+#2
+1#
+#5
+1"
+#10
+b1 )
+0"
+1$
+#15
+b11 )
+b1 *
+1"
+#20
+0"
+#25
+b10 )
+b11 *
+1"
+#30
+1!
+b0 )
+0"
+0$
+#35
+0!
+b0 *
+1"
+#40
+b1 )
+0"
+1$
+#45
+b11 )
+b1 *
+1"
+#50
+1!
+b0 )
+0"
+0$
+#52
+b11 )
+0!
+1$
+#54
+1!
+b0 )
+0$
+#55
+0!
+b0 *
+1"
+#60
+0"
+#65
+1"
+#70
+b1 )
+0"
+1$
+#75
+b11 )
+b1 *
+1"
+#80
+0"
+#85
+b10 )
+b11 *
+1"
+#87
+b1 )
+b0 *
+0#
+#89
+1#
+#90
+0"
+#95
+b11 )
+b1 *
+1"
+#100
+b0 )
+1!
+0"
+0$
+#105
+0!
+b0 *
+1"
+#110
+0"
+#115
+1"
+#120
+b1 )
+0"
+1$
+#125
+b11 )
+b1 *
+1"
+#130
+0"
+#135
+b10 )
+b11 *
+1"
+#140
+0"
+#145
+b10 *
+1"
+#150
+0"
+#155
+1"
+#160
+b0 )
+1!
+0"
+0$
+#165
+0!
+b0 *
+1"
+#170
+b1 )
+0"
+1$
+#175
+b11 )
+b1 *
+1"
+#180
+0"
+#185
+b10 )
+b11 *
+1"
+#190
+0"
+#195
+b10 *
+1"
+#200
+0"

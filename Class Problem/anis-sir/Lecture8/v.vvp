@@ -1,0 +1,109 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "D:\iverilog\lib\ivl\system.vpi";
+:vpi_module "D:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "D:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "D:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "D:\iverilog\lib\ivl\va_math.vpi";
+S_00000177fa2f6b30 .scope module, "t_Four_input_encoder_with_V" "t_Four_input_encoder_with_V" 2 2;
+ .timescale 0 0;
+P_00000177fa1da240 .param/l "stop_time" 0 2 5, +C4<00000000000000000000000001011010>;
+v00000177fa33d270_0 .var "D0", 0 0;
+v00000177fa33d3b0_0 .var "D1", 0 0;
+v00000177fa33c910_0 .var "D2", 0 0;
+v00000177fa33c870_0 .var "D3", 0 0;
+v00000177fa33d590_0 .net "V", 0 0, L_00000177fa2c2fb0;  1 drivers
+v00000177fa33d090_0 .net "x", 0 0, L_00000177fa2e6a00;  1 drivers
+v00000177fa33d450_0 .net "y", 0 0, L_00000177fa2e6a70;  1 drivers
+E_00000177fa1da940 .event anyedge, v00000177fa2c2b70_0, v00000177fa2c2910_0, v00000177fa1daed0_0, v00000177fa2f6e50_0;
+S_00000177fa2f6cc0 .scope module, "ABD" "Four_input_encoder_with_V" 2 7, 3 1 0, S_00000177fa2f6b30;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "D0";
+    .port_info 1 /INPUT 1 "D1";
+    .port_info 2 /INPUT 1 "D2";
+    .port_info 3 /INPUT 1 "D3";
+    .port_info 4 /OUTPUT 1 "x";
+    .port_info 5 /OUTPUT 1 "y";
+    .port_info 6 /OUTPUT 1 "V";
+L_00000177fa1daf70 .functor AND 1, v00000177fa33d3b0_0, L_00000177fa1d93f0, C4<1>, C4<1>;
+L_00000177fa1d93f0 .functor NOT 1, v00000177fa33c910_0, C4<0>, C4<0>, C4<0>;
+L_00000177fa2c2fb0 .functor OR 1, v00000177fa33d270_0, v00000177fa33d3b0_0, v00000177fa33c910_0, v00000177fa33c870_0;
+L_00000177fa2e6a00 .functor OR 1, v00000177fa33c910_0, v00000177fa33c870_0, C4<0>, C4<0>;
+L_00000177fa2e6a70 .functor OR 1, v00000177fa33c870_0, L_00000177fa1daf70, C4<0>, C4<0>;
+v00000177fa2c2b70_0 .net "D0", 0 0, v00000177fa33d270_0;  1 drivers
+v00000177fa2c2910_0 .net "D1", 0 0, v00000177fa33d3b0_0;  1 drivers
+v00000177fa1daed0_0 .net "D2", 0 0, v00000177fa33c910_0;  1 drivers
+v00000177fa2f6e50_0 .net "D3", 0 0, v00000177fa33c870_0;  1 drivers
+v00000177fa2f6ef0_0 .net "V", 0 0, L_00000177fa2c2fb0;  alias, 1 drivers
+v00000177fa2f53d0_0 .net *"_ivl_1", 0 0, L_00000177fa1d93f0;  1 drivers
+v00000177fa2f5470_0 .net "w", 0 0, L_00000177fa1daf70;  1 drivers
+v00000177fa2e6960_0 .net "x", 0 0, L_00000177fa2e6a00;  alias, 1 drivers
+v00000177fa33cd70_0 .net "y", 0 0, L_00000177fa2e6a70;  alias, 1 drivers
+    .scope S_00000177fa2f6b30;
+T_0 ;
+    %delay 90, 0;
+    %vpi_call 2 8 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_00000177fa2f6b30;
+T_1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000177fa33c870_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000177fa33c910_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000177fa33d3b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000177fa33d270_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000177fa33c870_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000177fa33c910_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000177fa33d3b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000177fa33d270_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000177fa33c870_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000177fa33c910_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000177fa33d3b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000177fa33d270_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000177fa33c870_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000177fa33c910_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000177fa33d3b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000177fa33d270_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000177fa33c870_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000177fa33c910_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000177fa33d3b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000177fa33d270_0, 0, 1;
+    %end;
+    .thread T_1;
+    .scope S_00000177fa2f6b30;
+T_2 ;
+    %wait E_00000177fa1da940;
+    %vpi_call 2 19 "$monitor", "D3=%b  D2=%b D1=%b D0=%b x=%b y=%b V=%b", v00000177fa33c870_0, v00000177fa33c910_0, v00000177fa33d3b0_0, v00000177fa33d270_0, v00000177fa33d090_0, v00000177fa33d450_0, v00000177fa33d590_0 {0 0 0};
+    %jmp T_2;
+    .thread T_2, $push;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "t_Four_input_encoder_with_V.sv";
+    "./Four_input_encoder_with_V.sv";

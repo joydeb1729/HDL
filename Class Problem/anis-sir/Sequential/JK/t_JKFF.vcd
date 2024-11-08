@@ -1,0 +1,133 @@
+$date
+	Sun Jul 07 15:03:00 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_JKFF $end
+$var wire 1 ! t_Q $end
+$var reg 1 " t_Clk $end
+$var reg 1 # t_J $end
+$var reg 1 $ t_K $end
+$var reg 1 % t_rst $end
+$scope module JK $end
+$var wire 1 " Clk $end
+$var wire 1 # J $end
+$var wire 1 & JK $end
+$var wire 1 $ K $end
+$var wire 1 % rst $end
+$var wire 1 ! Q $end
+$scope module JK1 $end
+$var wire 1 " Clk $end
+$var wire 1 & D $end
+$var wire 1 % rst $end
+$var reg 1 ! Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+x&
+0%
+x$
+x#
+0"
+0!
+$end
+#1
+1%
+#2
+0&
+0#
+0$
+#3
+0%
+#4
+1%
+#5
+1"
+#10
+0"
+#15
+1"
+#20
+0"
+#22
+1$
+#25
+1"
+#30
+0"
+#32
+1&
+1#
+0$
+#35
+1!
+1"
+#40
+0"
+#42
+0&
+1$
+#45
+1&
+0!
+1"
+#50
+0"
+#52
+0&
+0#
+0$
+#55
+1"
+#60
+0"
+#62
+1&
+1#
+1$
+#65
+0&
+1!
+1"
+#70
+0"
+#75
+1&
+0!
+1"
+#80
+0"
+#85
+0&
+1!
+1"
+#87
+1&
+0!
+0%
+#90
+0"
+#92
+1%
+#95
+0&
+1!
+1"
+#100
+0"
+#105
+1&
+0!
+1"
+#110
+0"

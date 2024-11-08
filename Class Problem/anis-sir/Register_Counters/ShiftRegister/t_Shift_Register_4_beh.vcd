@@ -1,0 +1,101 @@
+$date
+	Mon Jul 08 14:26:28 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_Shift_Register_4_beh $end
+$var wire 4 ! A_par [3:0] $end
+$var reg 1 " CLK $end
+$var reg 1 # Clear_b $end
+$var reg 4 $ I_par [3:0] $end
+$var reg 1 % LSB_in $end
+$var reg 1 & MSB_in $end
+$var reg 1 ' s0 $end
+$var reg 1 ( s1 $end
+$scope module UR $end
+$var wire 1 " CLK $end
+$var wire 1 # Clear_b $end
+$var wire 4 ) I_par [3:0] $end
+$var wire 1 % LSB_in $end
+$var wire 1 & MSB_in $end
+$var wire 1 ' s0 $end
+$var wire 1 ( s1 $end
+$var reg 4 * A_par [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx *
+b1010 )
+0(
+0'
+1&
+0%
+b1010 $
+1#
+0"
+bx !
+$end
+#5
+b0 !
+b0 *
+0#
+#10
+1'
+#12
+1#
+#17
+b1000 !
+b1000 *
+1"
+#22
+0"
+#27
+b1100 !
+b1100 *
+1"
+#32
+0"
+#37
+b1110 !
+b1110 *
+1"
+#40
+1(
+#42
+0"
+#47
+b1010 !
+b1010 *
+1"
+#52
+0"
+#57
+1"
+#62
+0"
+#67
+1"
+#72
+0"
+#77
+1"
+#80
+0'
+#82
+0"
+#87
+b100 !
+b100 *
+1"
+#92
+0"
+#100

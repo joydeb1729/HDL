@@ -1,0 +1,55 @@
+$date
+	Sat Jul 20 15:25:14 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_mux_4x1_beh $end
+$var wire 1 ! m_out $end
+$var reg 1 " in_0 $end
+$var reg 1 # in_1 $end
+$var reg 1 $ in_2 $end
+$var reg 1 % in_3 $end
+$var reg 2 & select [1:0] $end
+$scope module M1 $end
+$var wire 1 " in_0 $end
+$var wire 1 # in_1 $end
+$var wire 1 $ in_2 $end
+$var wire 1 % in_3 $end
+$var wire 2 ' select [1:0] $end
+$var reg 1 ! m_out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 '
+b0 &
+1%
+0$
+1#
+0"
+0!
+$end
+#50
+1!
+b1 &
+b1 '
+#100
+0!
+b10 &
+b10 '
+#150
+1!
+b11 &
+b11 '
+#200
+0!
+0%
+#300

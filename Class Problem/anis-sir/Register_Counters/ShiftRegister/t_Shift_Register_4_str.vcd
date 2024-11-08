@@ -1,0 +1,341 @@
+$date
+	Mon Jul 08 21:17:51 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_Shift_Register_4_str $end
+$var wire 4 ! B_par [3:0] $end
+$var wire 4 " A_par [3:0] $end
+$var reg 1 # CLK $end
+$var reg 1 $ Clear_b $end
+$var reg 4 % I_par [3:0] $end
+$var reg 1 & LSB_in $end
+$var reg 1 ' MSB_in $end
+$var reg 1 ( s0 $end
+$var reg 1 ) s1 $end
+$scope module URB $end
+$var wire 1 # CLK $end
+$var wire 1 $ Clear_b $end
+$var wire 4 * I_par [3:0] $end
+$var wire 1 & LSB_in $end
+$var wire 1 ' MSB_in $end
+$var wire 1 ( s0 $end
+$var wire 1 ) s1 $end
+$var reg 4 + A_par [3:0] $end
+$upscope $end
+$scope module URS $end
+$var wire 1 # CLK $end
+$var wire 1 $ Clear_b $end
+$var wire 4 , I_par [3:0] $end
+$var wire 1 & LSB_in $end
+$var wire 1 ' MSB_in $end
+$var wire 1 ( s0 $end
+$var wire 1 ) s1 $end
+$var wire 2 - select [1:0] $end
+$var wire 4 . A_par [3:0] $end
+$scope module ST0 $end
+$var wire 1 # CLK $end
+$var wire 1 $ Clr_b $end
+$var wire 1 / i0 $end
+$var wire 1 0 i1 $end
+$var wire 1 & i2 $end
+$var wire 1 1 i3 $end
+$var wire 2 2 select [1:0] $end
+$var wire 1 3 mux_out $end
+$var wire 1 4 Q $end
+$scope module M0 $end
+$var wire 1 / i0 $end
+$var wire 1 0 i1 $end
+$var wire 1 & i2 $end
+$var wire 1 1 i3 $end
+$var wire 2 5 select [1:0] $end
+$var reg 1 3 mux_out $end
+$upscope $end
+$scope module M1 $end
+$var wire 1 # CLK $end
+$var wire 1 $ Clr_b $end
+$var wire 1 3 D $end
+$var reg 1 4 Q $end
+$upscope $end
+$upscope $end
+$scope module ST1 $end
+$var wire 1 # CLK $end
+$var wire 1 $ Clr_b $end
+$var wire 1 6 i0 $end
+$var wire 1 7 i1 $end
+$var wire 1 8 i2 $end
+$var wire 1 9 i3 $end
+$var wire 2 : select [1:0] $end
+$var wire 1 ; mux_out $end
+$var wire 1 < Q $end
+$scope module M0 $end
+$var wire 1 6 i0 $end
+$var wire 1 7 i1 $end
+$var wire 1 8 i2 $end
+$var wire 1 9 i3 $end
+$var wire 2 = select [1:0] $end
+$var reg 1 ; mux_out $end
+$upscope $end
+$scope module M1 $end
+$var wire 1 # CLK $end
+$var wire 1 $ Clr_b $end
+$var wire 1 ; D $end
+$var reg 1 < Q $end
+$upscope $end
+$upscope $end
+$scope module ST2 $end
+$var wire 1 # CLK $end
+$var wire 1 $ Clr_b $end
+$var wire 1 > i0 $end
+$var wire 1 ? i1 $end
+$var wire 1 @ i2 $end
+$var wire 1 A i3 $end
+$var wire 2 B select [1:0] $end
+$var wire 1 C mux_out $end
+$var wire 1 D Q $end
+$scope module M0 $end
+$var wire 1 > i0 $end
+$var wire 1 ? i1 $end
+$var wire 1 @ i2 $end
+$var wire 1 A i3 $end
+$var wire 2 E select [1:0] $end
+$var reg 1 C mux_out $end
+$upscope $end
+$scope module M1 $end
+$var wire 1 # CLK $end
+$var wire 1 $ Clr_b $end
+$var wire 1 C D $end
+$var reg 1 D Q $end
+$upscope $end
+$upscope $end
+$scope module ST3 $end
+$var wire 1 # CLK $end
+$var wire 1 $ Clr_b $end
+$var wire 1 F i0 $end
+$var wire 1 ' i1 $end
+$var wire 1 G i2 $end
+$var wire 1 H i3 $end
+$var wire 2 I select [1:0] $end
+$var wire 1 J mux_out $end
+$var wire 1 K Q $end
+$scope module M0 $end
+$var wire 1 F i0 $end
+$var wire 1 ' i1 $end
+$var wire 1 G i2 $end
+$var wire 1 H i3 $end
+$var wire 2 L select [1:0] $end
+$var reg 1 J mux_out $end
+$upscope $end
+$scope module M1 $end
+$var wire 1 # CLK $end
+$var wire 1 $ Clr_b $end
+$var wire 1 J D $end
+$var reg 1 K Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 L
+xK
+xJ
+b0 I
+1H
+xG
+xF
+b0 E
+xD
+xC
+b0 B
+0A
+x@
+x?
+x>
+b0 =
+x<
+x;
+b0 :
+19
+x8
+x7
+x6
+b0 5
+x4
+x3
+b0 2
+01
+x0
+x/
+bx .
+b0 -
+b1010 ,
+bx +
+b1010 *
+0)
+0(
+1'
+0&
+b1010 %
+1$
+0#
+bx "
+bx !
+$end
+#5
+03
+0;
+0J
+0C
+08
+0/
+0@
+06
+00
+0G
+0>
+07
+0F
+0?
+04
+0<
+0D
+b0 "
+b0 .
+0K
+b0 !
+b0 +
+0$
+#10
+1J
+b1 -
+b1 2
+b1 5
+b1 :
+b1 =
+b1 B
+b1 E
+b1 I
+b1 L
+1(
+#12
+1$
+#17
+1C
+1F
+1?
+b1000 !
+b1000 +
+b1000 "
+b1000 .
+1K
+1#
+#22
+0#
+#27
+1;
+1G
+1>
+17
+b1100 "
+b1100 .
+1D
+b1100 !
+b1100 +
+1#
+#32
+0#
+#37
+13
+1@
+16
+10
+b1110 !
+b1110 +
+b1110 "
+b1110 .
+1<
+1#
+#40
+03
+0C
+b11 -
+b11 2
+b11 5
+b11 :
+b11 =
+b11 B
+b11 E
+b11 I
+b11 L
+1)
+#42
+0#
+#47
+0G
+0>
+07
+b1010 "
+b1010 .
+0D
+b1010 !
+b1010 +
+1#
+#52
+0#
+#57
+1#
+#62
+0#
+#67
+1#
+#72
+0#
+#77
+1#
+#80
+0;
+1C
+0J
+b10 -
+b10 2
+b10 5
+b10 :
+b10 =
+b10 B
+b10 E
+b10 I
+b10 L
+0(
+#82
+0#
+#87
+1J
+0C
+0@
+06
+00
+1G
+1>
+17
+0F
+0?
+0<
+1D
+b100 "
+b100 .
+0K
+b100 !
+b100 +
+1#
+#92
+0#
+#100

@@ -1,0 +1,36 @@
+$date
+	Fri Jul 05 21:15:05 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_mux_2x1_df $end
+$var wire 1 ! m_out $end
+$var reg 1 " A $end
+$var reg 1 # B $end
+$var reg 1 $ select $end
+$scope module M1 $end
+$var wire 1 " A $end
+$var wire 1 # B $end
+$var wire 1 $ select $end
+$var wire 1 ! m_out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0$
+1#
+0"
+1!
+$end
+#100
+0!
+1$
+#200

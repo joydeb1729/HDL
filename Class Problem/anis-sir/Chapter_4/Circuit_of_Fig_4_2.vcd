@@ -1,0 +1,100 @@
+$date
+	Sat Jul 06 15:06:17 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module test_circuit $end
+$var wire 1 ! F2 $end
+$var wire 1 " F1 $end
+$var parameter 32 # stop_time $end
+$var reg 3 $ D [2:0] $end
+$scope module CF42 $end
+$var wire 1 % A $end
+$var wire 1 & B $end
+$var wire 1 ' C $end
+$var wire 1 ( E1 $end
+$var wire 1 ) E2 $end
+$var wire 1 * E3 $end
+$var wire 1 " F1 $end
+$var wire 1 ! F2 $end
+$var wire 1 + F2_b $end
+$var wire 1 , T1 $end
+$var wire 1 - T2 $end
+$var wire 1 . T3 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010000 #
+$end
+#0
+$dumpvars
+0.
+0-
+0,
+1+
+0*
+0)
+0(
+0'
+0&
+0%
+b0 $
+0"
+0!
+$end
+#10
+1"
+1.
+1,
+1'
+b1 $
+#20
+1&
+0'
+b10 $
+#30
+0"
+0.
+0+
+1!
+1*
+1'
+b11 $
+#40
+1"
+1.
+1+
+0!
+0*
+1%
+0&
+0'
+b100 $
+#50
+0"
+0.
+0+
+1!
+1)
+1'
+b101 $
+#60
+1(
+0)
+1&
+0'
+b110 $
+#70
+1"
+1-
+1)
+1*
+1'
+b111 $
+#80
