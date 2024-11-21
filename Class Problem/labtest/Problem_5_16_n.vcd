@@ -1,0 +1,143 @@
+$date
+	Mon Nov 18 23:28:25 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_Problem_5_16_n $end
+$var wire 2 ! state [1:0] $end
+$var wire 1 " FB $end
+$var wire 1 # FA $end
+$var reg 1 $ t_clock $end
+$var reg 1 % t_reset $end
+$var reg 1 & t_x_in $end
+$scope module P $end
+$var wire 1 ' Da $end
+$var wire 1 ( Db $end
+$var wire 1 $ clk $end
+$var wire 1 % res $end
+$var wire 1 & x_in $end
+$var wire 1 " B $end
+$var wire 1 # A $end
+$scope module D1 $end
+$var wire 1 $ Clk $end
+$var wire 1 ' D $end
+$var wire 1 % rst $end
+$var reg 1 # Q $end
+$upscope $end
+$scope module D2 $end
+$var wire 1 $ Clk $end
+$var wire 1 ( D $end
+$var wire 1 % rst $end
+$var reg 1 " Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x(
+x'
+0&
+1%
+0$
+x#
+x"
+bx !
+$end
+#5
+1'
+0(
+0#
+b0 !
+0"
+1$
+0%
+#10
+0'
+0$
+1%
+1&
+#15
+1$
+#20
+0$
+#25
+1$
+#30
+0$
+#35
+1$
+#40
+1'
+0$
+0&
+#45
+1(
+b10 !
+1#
+1$
+#50
+0$
+#55
+0'
+b11 !
+1"
+1$
+#60
+0$
+#65
+0(
+b1 !
+0#
+1$
+#70
+1(
+0$
+1&
+#75
+1$
+#80
+0$
+#85
+1$
+#90
+0$
+#95
+1$
+#100
+0(
+0$
+0&
+#105
+1'
+b0 !
+0"
+1$
+#110
+0$
+#115
+1(
+b10 !
+1#
+1$
+#120
+0$
+#125
+0'
+b11 !
+1"
+1$
+#130
+0$
+#135
+0(
+b1 !
+0#
+1$
+#140
+0$
+#150

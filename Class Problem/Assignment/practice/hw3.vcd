@@ -1,0 +1,181 @@
+$date
+	Tue Nov 12 22:18:52 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module moore_fsm_tb $end
+$var wire 1 ! output_signal $end
+$var reg 1 " clk $end
+$var reg 1 # input_signal $end
+$var reg 1 $ reset $end
+$scope module dut $end
+$var wire 1 " clk $end
+$var wire 1 # input_signal $end
+$var wire 1 $ reset $end
+$var reg 2 % current_state [1:0] $end
+$var reg 2 & next_state [1:0] $end
+$var reg 1 ! output_signal $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 &
+b0 %
+0$
+0#
+0"
+0!
+$end
+#5
+1"
+#10
+0"
+1$
+#15
+b10 &
+1!
+b1 %
+1"
+#20
+0"
+#25
+b1 &
+b10 %
+1"
+#30
+0"
+#35
+b10 &
+b1 %
+1"
+#40
+0"
+#45
+b1 &
+b10 %
+1"
+#50
+0"
+#55
+b10 &
+b1 %
+1"
+#60
+0"
+#65
+b1 &
+b10 %
+1"
+#70
+b11 &
+0"
+1#
+#75
+b0 &
+0!
+b11 %
+1"
+#80
+0"
+#85
+b10 &
+b0 %
+1"
+#90
+0"
+#95
+b11 &
+1!
+b10 %
+1"
+#100
+b1 &
+0"
+0#
+#105
+b10 &
+b1 %
+1"
+#110
+0"
+#115
+b1 &
+b10 %
+1"
+#120
+0"
+#125
+b10 &
+b1 %
+1"
+#130
+b11 &
+0"
+1#
+#135
+b0 &
+0!
+b11 %
+1"
+#140
+0"
+#145
+b10 &
+b0 %
+1"
+#150
+b1 &
+0"
+0#
+#155
+b10 &
+1!
+b1 %
+1"
+#160
+b1 &
+0!
+b0 %
+0"
+0$
+#165
+1"
+#170
+0"
+1$
+#175
+b10 &
+1!
+b1 %
+1"
+#180
+b11 &
+0"
+1#
+#185
+b0 &
+0!
+b11 %
+1"
+#190
+0"
+#195
+b10 &
+b0 %
+1"
+#200
+b1 &
+0"
+0#
+#205
+b10 &
+1!
+b1 %
+1"
+#210
+0"

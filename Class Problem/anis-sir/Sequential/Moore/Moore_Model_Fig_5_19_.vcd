@@ -1,0 +1,152 @@
+$date
+	Tue Nov 12 20:46:03 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_Moore_Model_Fig_5_19 $end
+$var wire 2 ! t_y_out [1:0] $end
+$var reg 1 " t_clock $end
+$var reg 1 # t_reset $end
+$var reg 1 $ t_x_in $end
+$scope module M0 $end
+$var wire 1 " clock $end
+$var wire 1 # reset $end
+$var wire 1 $ x_in $end
+$var wire 2 % y_out [1:0] $end
+$var reg 2 & state [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 &
+b0 %
+x$
+0#
+0"
+b0 !
+$end
+#2
+1#
+#5
+1"
+#10
+0"
+1$
+#15
+1"
+#20
+0"
+#25
+1"
+#30
+0"
+0$
+#35
+b1 !
+b1 %
+b1 &
+1"
+#40
+0"
+1$
+#45
+b10 !
+b10 %
+b10 &
+1"
+#50
+0"
+0$
+#52
+1$
+#54
+0$
+#55
+b11 !
+b11 %
+b11 &
+1"
+#60
+0"
+#65
+b0 !
+b0 %
+b0 &
+1"
+#70
+0"
+1$
+#75
+1"
+#80
+0"
+#85
+1"
+#87
+0#
+#89
+1#
+#90
+0"
+#95
+1"
+#100
+0"
+0$
+#105
+b1 !
+b1 %
+b1 &
+1"
+#110
+0"
+#115
+b11 !
+b11 %
+b11 &
+1"
+#120
+0"
+1$
+#125
+1"
+#130
+0"
+#135
+1"
+#140
+0"
+#145
+1"
+#150
+0"
+#155
+1"
+#160
+0"
+0$
+#165
+b0 !
+b0 %
+b0 &
+1"
+#170
+0"
+1$
+#175
+1"
+#180
+0"
+#185
+1"
+#190
+0"
+#195
+1"
+#200
+0"

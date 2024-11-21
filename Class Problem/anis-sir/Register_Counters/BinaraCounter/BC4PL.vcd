@@ -1,0 +1,129 @@
+$date
+	Tue Nov 19 18:29:30 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_Binary_Counter_4_Par_Load $end
+$var wire 1 ! C_out $end
+$var wire 4 " A_count [3:0] $end
+$var reg 1 # CLK $end
+$var reg 1 $ Clear_b $end
+$var reg 1 % Count $end
+$var reg 4 & Data_in [3:0] $end
+$var reg 1 ' Load $end
+$scope module BC4PL $end
+$var wire 1 # CLK $end
+$var wire 1 ! C_out $end
+$var wire 1 $ Clear_b $end
+$var wire 1 % Count $end
+$var wire 4 ( Data_in [3:0] $end
+$var wire 1 ' Load $end
+$var reg 4 ) A_count [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx )
+b1010 (
+0'
+b1010 &
+x%
+1$
+0#
+bx "
+x!
+$end
+#5
+0!
+b0 "
+b0 )
+0$
+#10
+1'
+#12
+1$
+#17
+b1010 "
+b1010 )
+1#
+#22
+0#
+0'
+#24
+1%
+#27
+b1011 "
+b1011 )
+1#
+#32
+0#
+#36
+b0 "
+b0 )
+0$
+#37
+1#
+#42
+0#
+#47
+1#
+#52
+0#
+#57
+1#
+#58
+1$
+#62
+0#
+#67
+b1 "
+b1 )
+1#
+#72
+0#
+#77
+b10 "
+b10 )
+1#
+#82
+0#
+#87
+b11 "
+b11 )
+1#
+#92
+0#
+#97
+b100 "
+b100 )
+1#
+#102
+0#
+#107
+b101 "
+b101 )
+1#
+#112
+0#
+#117
+b110 "
+b110 )
+1#
+#122
+0#
+#127
+b111 "
+b111 )
+1#
+#132
+0#
+#137
+b1000 "
+b1000 )
+1#
+#150

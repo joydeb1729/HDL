@@ -1,0 +1,209 @@
+$date
+	Wed Nov 20 13:11:50 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_Ripple_Counter_4bit $end
+$var wire 4 ! A [3:0] $end
+$var reg 1 " Count $end
+$var reg 1 # Reset $end
+$scope module M0 $end
+$var wire 1 " Count $end
+$var wire 1 # Reset $end
+$var wire 1 $ A3 $end
+$var wire 1 % A2 $end
+$var wire 1 & A1 $end
+$var wire 1 ' A0 $end
+$scope module F0 $end
+$var wire 1 " CLK $end
+$var wire 1 # Reset $end
+$var reg 1 ' Q $end
+$upscope $end
+$scope module F1 $end
+$var wire 1 ' CLK $end
+$var wire 1 # Reset $end
+$var reg 1 & Q $end
+$upscope $end
+$scope module F2 $end
+$var wire 1 & CLK $end
+$var wire 1 # Reset $end
+$var reg 1 % Q $end
+$upscope $end
+$scope module F3 $end
+$var wire 1 % CLK $end
+$var wire 1 # Reset $end
+$var reg 1 $ Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x'
+x&
+x%
+x$
+x#
+0"
+bx !
+$end
+#4
+0#
+#5
+1"
+#8
+0'
+0&
+0%
+b0 !
+0$
+1#
+#10
+0"
+#12
+0#
+#15
+1"
+#20
+0"
+#22
+b1 !
+1'
+#25
+1"
+#30
+0"
+#32
+b0 !
+0'
+#34
+b10 !
+1&
+#35
+1"
+#40
+0"
+#42
+b11 !
+1'
+#45
+1"
+#50
+0"
+#52
+b10 !
+0'
+#54
+b0 !
+0&
+#55
+1"
+#56
+b100 !
+1%
+#60
+0"
+#62
+b101 !
+1'
+#65
+1"
+#70
+0"
+#72
+b100 !
+0'
+#74
+b110 !
+1&
+#75
+1"
+#80
+0"
+#82
+b111 !
+1'
+#85
+1"
+#90
+0"
+#92
+b110 !
+0'
+#94
+b100 !
+0&
+#95
+1"
+#96
+b0 !
+0%
+#98
+b1000 !
+1$
+#100
+0"
+#102
+b1001 !
+1'
+#105
+1"
+#110
+0"
+#112
+b1000 !
+0'
+#114
+b1010 !
+1&
+#115
+1"
+#120
+0"
+#122
+b1011 !
+1'
+#125
+1"
+#130
+0"
+#132
+b1010 !
+0'
+#134
+b1000 !
+0&
+#135
+1"
+#136
+b1100 !
+1%
+#140
+0"
+#142
+b1101 !
+1'
+#145
+1"
+#150
+0"
+#152
+b1100 !
+0'
+#154
+b1110 !
+1&
+#155
+1"
+#160
+0"
+#162
+b1111 !
+1'
+#165
+1"
+#170

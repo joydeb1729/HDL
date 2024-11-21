@@ -1,0 +1,238 @@
+$date
+	Wed Nov 20 15:32:18 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_Lab_Test6 $end
+$var wire 3 ! B [2:0] $end
+$var wire 3 " A [2:0] $end
+$var reg 1 # CLK $end
+$var reg 1 $ Reset $end
+$scope module N $end
+$var wire 1 # Count $end
+$var wire 1 $ Reset $end
+$var wire 1 % A2 $end
+$var wire 1 & A1 $end
+$var wire 1 ' A0 $end
+$scope module F0 $end
+$var wire 1 # CLK $end
+$var wire 1 $ Reset $end
+$var reg 1 ' Q $end
+$upscope $end
+$scope module F1 $end
+$var wire 1 ' CLK $end
+$var wire 1 $ Reset $end
+$var reg 1 & Q $end
+$upscope $end
+$scope module F2 $end
+$var wire 1 & CLK $end
+$var wire 1 $ Reset $end
+$var reg 1 % Q $end
+$upscope $end
+$upscope $end
+$scope module P $end
+$var wire 1 # Count $end
+$var wire 1 $ Reset $end
+$var wire 1 ( A2 $end
+$var wire 1 ) A1 $end
+$var wire 1 * A0 $end
+$scope module F0 $end
+$var wire 1 # CLK $end
+$var wire 1 $ Reset $end
+$var reg 1 * Q $end
+$upscope $end
+$scope module F1 $end
+$var wire 1 * CLK $end
+$var wire 1 $ Reset $end
+$var reg 1 ) Q $end
+$upscope $end
+$scope module F2 $end
+$var wire 1 ) CLK $end
+$var wire 1 $ Reset $end
+$var reg 1 ( Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x*
+x)
+x(
+x'
+x&
+x%
+x$
+0#
+bx "
+bx !
+$end
+#4
+0$
+#5
+1#
+#8
+0'
+0&
+b0 "
+0%
+0*
+0)
+b0 !
+0(
+1$
+#10
+0#
+#12
+0$
+#15
+1(
+1)
+b111 !
+1*
+1#
+#20
+b1 "
+1'
+0#
+#25
+b110 !
+0*
+1#
+#30
+1&
+b10 "
+0'
+0#
+#35
+0)
+b101 !
+1*
+1#
+#40
+b11 "
+1'
+0#
+#45
+b100 !
+0*
+1#
+#50
+1%
+0&
+b100 "
+0'
+0#
+#55
+0(
+1)
+b11 !
+1*
+1#
+#60
+b101 "
+1'
+0#
+#65
+b10 !
+0*
+1#
+#70
+1&
+b110 "
+0'
+0#
+#75
+0)
+b1 !
+1*
+1#
+#80
+b111 "
+1'
+0#
+#85
+b0 !
+0*
+1#
+#90
+0%
+0&
+b0 "
+0'
+0#
+#95
+1(
+1)
+b111 !
+1*
+1#
+#100
+b1 "
+1'
+0#
+#105
+b110 !
+0*
+1#
+#110
+1&
+b10 "
+0'
+0#
+#115
+0)
+b101 !
+1*
+1#
+#120
+b11 "
+1'
+0#
+#125
+b100 !
+0*
+1#
+#130
+1%
+0&
+b100 "
+0'
+0#
+#135
+0(
+1)
+b11 !
+1*
+1#
+#140
+b101 "
+1'
+0#
+#145
+b10 !
+0*
+1#
+#150
+1&
+b110 "
+0'
+0#
+#155
+0)
+b1 !
+1*
+1#
+#160
+b111 "
+1'
+0#
+#165
+b0 !
+0*
+1#
+#170
